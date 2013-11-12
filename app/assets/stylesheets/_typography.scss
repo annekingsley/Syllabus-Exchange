@@ -1,0 +1,82 @@
+// Color ----------------------------------------------------------------------
+$dark-grey: #58595b;
+$light-grey: #bcbec0;
+$blue: #00AEFF;
+
+// Box Sizing ------------------------------------------------------------------
+*, *:before, *:after {
+    @include box-sizing(border-box);
+}
+// Typography ----------------------------------------------------------------------
+
+body {
+  font-family: Helvetica,Arial, sans-serif;
+  color: $dark-grey;
+  overflow-x: hidden;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+screen and (min--moz-device-pixel-ratio: 2) {
+    body {
+    @include background-size(100%, 100px 100px);
+    }
+}
+
+p {
+  @include trailer(1);
+  @include adjust-font-size-to(16px);
+  @include adjust-leading-to(1.1);
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+}
+
+img {
+  width: auto !important; /*override the width below*/
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  text-align:center;
+  margin: 0 auto;
+}
+
+
+ul {
+  font-family: Helvetica,Arial,Sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $dark-grey;
+  font-weight: normal;
+
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family:'helvetica',sans-serif;
+  @include adjust-font-size-to(36px);
+  @include trailer(0.4);
+  letter-spacing: .05em;
+}
+
+h2 {
+  font-family:'helvetica',sans-serif;
+  @include adjust-font-size-to(22px);
+  @include adjust-leading-to(0.5);
+}
+
+h3 {
+  font-family:'helvetica',sans-serif;
+  @include adjust-font-size-to(17px);
+}
+
+h4 {
+  font-family: Helvetica,Arial,Sans-serif;
+  @include adjust-font-size-to(17px);
+}
+

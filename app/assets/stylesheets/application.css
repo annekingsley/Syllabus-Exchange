@@ -1,0 +1,45 @@
+@import "compass";
+@import "compass/reset";
+@import "compass/typography/vertical_rhythm";
+@import "compass/layout/grid-background";
+@import "compass/css3";
+@import "compass/css3/shared";
+@import "compass/utilities";
+@import "compass/layout/stretching";
+
+// Vertical Rhythm ----------------------------------------------------------
+
+$base-font-size: 14px;
+$base-line-height: 20px;
+$default-rhythm-border-style: solid;
+$ie-font-ratio: 14px / 100%;
+$base-rhythm-unit: $base-line-height / $base-font-size * 1em;
+$base-leader: ($base-line-height - $base-font-size) * 1em / $base-font-size;
+$base-half-leader: $base-leader / 2;
+$mediaCDN: "http://d1gxum163dfxw6.cloudfront.net";
+$typeLoc: "https://s3.amazonaws.com/marineeimages";
+@include establish-baseline;
+
+@import "typography";
+
+
+#search-query {
+  font-size: 30px;
+  height: 33px;
+}
+.hero-unit {
+  color: #fff;
+  text-shadow: 2px 2px 2px #333;
+  border-radius: 20px;
+  background: #eee url('http://www.pdx.edu/sites/default/files/styles/pdx_collage_large/public/UrbanPlaza.jpg') no-repeat;
+}
+.btn-info {
+  padding: 11px 57px
+}
+
+ .hero-unit {
+  background-color: #369;
+  color: #fff;
+  text-shadow: 2px 2px 2px #333;
+  border-radius: 20px;
+}

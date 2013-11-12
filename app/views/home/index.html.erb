@@ -1,0 +1,13 @@
+<div class="row">
+	<h1>Sample Syllabi</h1>
+	<% @syllabi.each do |syllabus| %>
+	<div class='span4'>
+	  <h2>
+	    <%= syllabus.title %>
+	  </h2>
+	  <p>
+	    <%= raw syllabus.body %>
+	  </p>
+	</div>
+	<% end %>
+</div>
